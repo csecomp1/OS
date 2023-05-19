@@ -49,3 +49,12 @@ int main() {
  twt+=P[i].wt;
  ttat+=P[i].tat;
  }
+ 
+ printf("Process \t \t Waiting time \t \t Turn Around time \n");
+ for(int i=0;i<n;i++){
+ printf("%d\t\t\t\t%d\t\t\t\t%d\t\t\t\t\n",P[i].pid,P[i].wt,P[i].tat);
+ }
+ printf("Average turn around time : %.2f\n",ttat/n);
+ printf("Average waiting time : %.2f",twt/n);
+ return 0;
+}
